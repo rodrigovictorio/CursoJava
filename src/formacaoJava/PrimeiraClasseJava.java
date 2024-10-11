@@ -36,7 +36,11 @@ public class PrimeiraClasseJava {
 		System.out.println("Data da matrícula: " + aluno1.getDataMatricula());
 		System.out.println("Série matriculado: " + aluno1.getSerieMatriculado());
 		System.out.println("Colégio: " + aluno1.getNomeEscola());
-		System.out.printf("Média do aluno: %.2f\n\n", aluno1.getMediaNota());
+		System.out.printf("Média do aluno: %.2f\n", aluno1.getMediaNota());
+		System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
+
+		System.out.println("");
 
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
 
@@ -65,7 +69,11 @@ public class PrimeiraClasseJava {
 		System.out.println("Data da matrícula: " + aluno2.getDataMatricula());
 		System.out.println("Série matriculado: " + aluno2.getSerieMatriculado());
 		System.out.println("Colégio: " + aluno2.getNomeEscola());
-		System.out.printf("Média do aluno: %.2f\n\n", aluno2.getMediaNota());
+		System.out.printf("Média do aluno: %.2f\n", aluno2.getMediaNota());
+		System.out.println("Resultado: " + (aluno2.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado: " + aluno2.getAlunoAprovado2());
+
+		System.out.println("");
 
 		Aluno aluno3 = new Aluno(); // Aqui será o Rodrigo
 		Aluno aluno4 = new Aluno();
