@@ -11,7 +11,7 @@ public class PrimeiraClasseJava {
 		 */
 		Aluno aluno1 = new Aluno(); // Aqui será o João
 		aluno1.nome = "João";
-		System.out.println(aluno1.nome);
+		System.out.println("Nome do primeiro aluno é " + aluno1.nome + ".");
 
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
 		Aluno aluno3 = new Aluno(); // Aqui será o Rodrigo
