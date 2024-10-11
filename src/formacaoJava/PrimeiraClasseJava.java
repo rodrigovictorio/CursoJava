@@ -21,6 +21,10 @@ public class PrimeiraClasseJava {
 		aluno1.setDataMatricula("10/01/2024");
 		aluno1.setSerieMatriculado("5");
 		aluno1.setNomeEscola("JDev Treinamento");
+		aluno1.setNota1(90);
+		aluno1.setNota2(80.8);
+		aluno1.setNota3(70.9);
+		aluno1.setNota4(90.7);
 
 		System.out.println("Nome: " + aluno1.getNome());
 		System.out.println("Data de Nascimento: " + aluno1.getDataNascimento());
@@ -32,8 +36,7 @@ public class PrimeiraClasseJava {
 		System.out.println("Data da matrícula: " + aluno1.getDataMatricula());
 		System.out.println("Série matriculado: " + aluno1.getSerieMatriculado());
 		System.out.println("Colégio: " + aluno1.getNomeEscola());
-
-		System.out.println("");
+		System.out.printf("Média do aluno: %.2f\n\n", aluno1.getMediaNota());
 
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
 
@@ -47,6 +50,10 @@ public class PrimeiraClasseJava {
 		aluno2.setDataMatricula("10/01/2024");
 		aluno2.setSerieMatriculado("2");
 		aluno2.setNomeEscola("JDev Treinamento");
+		aluno2.setNota1(60);
+		aluno2.setNota2(82.8);
+		aluno2.setNota3(59.9);
+		aluno2.setNota4(98.7);
 
 		System.out.println("Nome: " + aluno2.getNome());
 		System.out.println("Data de Nascimento: " + aluno2.getDataNascimento());
@@ -58,6 +65,7 @@ public class PrimeiraClasseJava {
 		System.out.println("Data da matrícula: " + aluno2.getDataMatricula());
 		System.out.println("Série matriculado: " + aluno2.getSerieMatriculado());
 		System.out.println("Colégio: " + aluno2.getNomeEscola());
+		System.out.printf("Média do aluno: %.2f\n\n", aluno2.getMediaNota());
 
 		Aluno aluno3 = new Aluno(); // Aqui será o Rodrigo
 		Aluno aluno4 = new Aluno();
