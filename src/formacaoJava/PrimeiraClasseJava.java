@@ -9,7 +9,7 @@ public class PrimeiraClasseJava {
 		 * - new Aluno() é uma INSTÂNCIA (Criação de OBJETO)
 		 * - aluno1 é uma referência para o OBJETO aluno
 		 */
-		Aluno aluno1 = new Aluno(); // Aqui será o João
+		Aluno aluno1 = null; // Aqui será o João
 
 		aluno1.setNome("João");
 		aluno1.setIdade(50);
