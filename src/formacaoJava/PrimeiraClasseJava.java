@@ -1,6 +1,6 @@
 package formacaoJava;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 import cursoJava.classes.Aluno;
 
@@ -12,6 +12,7 @@ public class PrimeiraClasseJava {
 		 * - aluno1 é uma referência para o OBJETO aluno
 		 */
 
+		/*
 		String nome = JOptionPane.showInputDialog("Digite o nome do aluno:");
 		String idade = JOptionPane.showInputDialog("Digite a sua idade:");
 		String dataNascimento = JOptionPane.showInputDialog("Digite sua data de nascimento: ");
@@ -62,7 +63,21 @@ public class PrimeiraClasseJava {
 		System.out.println(aluno1.toString()); // Descrição do objeto na memória.
 		System.out.println("Média do aluno: " + aluno1.getMediaNota());
 		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
+		*/
 		
+		// EQUALS e HASHCODE (Diferenciar e comparar objetos)
+
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Rodrigo");
 		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Rodrigo");
+
+		if (aluno1.equals(aluno2)) {
+			System.out.println("Alunos são iguais.");
+		}else {
+			System.out.println("Alunos não são iguais.");
+		}
+
 	}
 }
