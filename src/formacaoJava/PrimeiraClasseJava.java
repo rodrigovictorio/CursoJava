@@ -1,6 +1,6 @@
 package formacaoJava;
 
-//import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
 import cursoJava.classes.Aluno;
 
@@ -12,7 +12,6 @@ public class PrimeiraClasseJava {
 		 * - aluno1 é uma referência para o OBJETO aluno
 		 */
 
-		/*
 		String nome = JOptionPane.showInputDialog("Digite o nome do aluno:");
 		String idade = JOptionPane.showInputDialog("Digite a sua idade:");
 		String dataNascimento = JOptionPane.showInputDialog("Digite sua data de nascimento: ");
@@ -23,9 +22,17 @@ public class PrimeiraClasseJava {
 		String dataMatricula = JOptionPane.showInputDialog("Digite a data de sua matrícula: ");
 		String serieMatriculado = JOptionPane.showInputDialog("Digite a série em que o aluno(a) está matriculado: ");
 		String nomeEscola = JOptionPane.showInputDialog("Digite o nome da escola: ");
+
+		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1: ");
 		String nota1 = JOptionPane.showInputDialog("Digite a primeira nota : ");
+
+		String disciplina2 = JOptionPane.showInputDialog("Disciplina 2: ");
 		String nota2 = JOptionPane.showInputDialog("Digite a segunda nota : ");
+
+		String disciplina3 = JOptionPane.showInputDialog("Disciplina 3: ");
 		String nota3 = JOptionPane.showInputDialog("Digite a terceira nota : ");
+
+		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4: ");
 		String nota4 = JOptionPane.showInputDialog("Digite a quarta nota : ");
 		
 
@@ -41,10 +48,16 @@ public class PrimeiraClasseJava {
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setSerieMatriculado(serieMatriculado);
 		aluno1.setNomeEscola(nomeEscola);
+
 		aluno1.setNota1(Double.parseDouble(nota1));
 		aluno1.setNota2(Double.parseDouble(nota2));
 		aluno1.setNota3(Double.parseDouble(nota3));
 		aluno1.setNota4(Double.parseDouble(nota4));
+
+		aluno1.setDisciplina1(disciplina1);
+		aluno1.setDisciplina2(disciplina2);
+		aluno1.setDisciplina3(disciplina3);
+		aluno1.setDisciplina4(disciplina4);
 
 		System.out.println("Nome: " + aluno1.getNome());
 		System.out.println("Data de Nascimento: " + aluno1.getDataNascimento());
@@ -63,10 +76,10 @@ public class PrimeiraClasseJava {
 		System.out.println(aluno1.toString()); // Descrição do objeto na memória.
 		System.out.println("Média do aluno: " + aluno1.getMediaNota());
 		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
-		*/
 		
+		/*
 		// EQUALS e HASHCODE (Diferenciar e comparar objetos)
-
+		
 		Aluno aluno1 = new Aluno();
 		aluno1.setNome("Rodrigo");
 		
@@ -78,6 +91,6 @@ public class PrimeiraClasseJava {
 		}else {
 			System.out.println("Alunos não são iguais.");
 		}
-
+		*/
 	}
 }
