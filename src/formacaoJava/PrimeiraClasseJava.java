@@ -59,10 +59,10 @@ public class PrimeiraClasseJava {
 		System.out.println("Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
 		
-		Aluno aluno = new Aluno();
-		System.out.println(aluno.toString()); // Descrição do objeto na memória.
+		System.out.println(aluno1.toString()); // Descrição do objeto na memória.
+		System.out.println("Média do aluno: " + aluno1.getMediaNota());
+		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
 		
-		aluno = new Aluno();
-		System.out.println(aluno); // Descrição do objeto na memória.
+		
 	}
 }
