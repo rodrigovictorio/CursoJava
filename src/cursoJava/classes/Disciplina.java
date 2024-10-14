@@ -1,13 +1,13 @@
 package cursoJava.classes;
 
 /*
- * Essa CLASSE disciplina servirá para todos os OBJETOS e INSTÂNCIAS de notas e materias.
+ * Essa CLASSE disciplina servirá para todos os OBJETOS e INSTÂNCIAS de notas e disciplinas.
 */
 public class Disciplina {
 
     private double nota;
     private String disciplina;
-
+    
     public double getNota() {
         return nota;
     }
@@ -20,7 +20,7 @@ public class Disciplina {
     public void setDisciplina(String disciplina) {
         this.disciplina = disciplina;
     }
-
+    
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -31,7 +31,6 @@ public class Disciplina {
         result = prime * result + ((disciplina == null) ? 0 : disciplina.hashCode());
         return result;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -55,5 +54,7 @@ public class Disciplina {
     public String toString() {
         return "Disciplina [nota=" + nota + ", disciplina=" + disciplina + "]";
     }
+
+    
     
 }

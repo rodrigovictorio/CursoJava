@@ -1,5 +1,8 @@
 package cursoJava.classes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /* Esta é a nossa classe/objeto que representa o aluno */
 public class Aluno {
 
@@ -17,6 +20,7 @@ public class Aluno {
     private String nomeEscola;
     private String serieMatriculado;
 
+    // Variável em lista é sempre no plural
     private List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 
     public List<Disciplina> getDisciplinas() {
@@ -25,7 +29,7 @@ public class Aluno {
 
     public void setDisciplinas(List<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
-    }
+    }  
 
     // Construtor
     public Aluno() { // Cria os dados na memória - Sendo padrão no Java
@@ -132,7 +136,14 @@ public class Aluno {
 
     // Método que retorno a média do aluno
     public double getMediaNota() {
-        return 0;
+
+        double somaNotas = 0.0;
+
+        for (Disciplina disciplina : disciplinas) {
+            somaNotas += disciplina.getNota();
+        }
+
+        return somaNotas / disciplinas.size();
     }
 
     public boolean getAlunoAprovado() {
@@ -184,6 +195,6 @@ public class Aluno {
         } else if (!nome.equals(other.nome))
             return false;
         return true;
-    }    
+    }
     
 }

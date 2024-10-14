@@ -3,6 +3,7 @@ package formacaoJava;
 import javax.swing.JOptionPane;
 
 import cursoJava.classes.Aluno;
+import cursoJava.classes.Disciplina;
 
 public class PrimeiraClasseJava {
     public static void main(String[] args) {
@@ -23,19 +24,6 @@ public class PrimeiraClasseJava {
 		String serieMatriculado = JOptionPane.showInputDialog("Digite a série em que o aluno(a) está matriculado: ");
 		String nomeEscola = JOptionPane.showInputDialog("Digite o nome da escola: ");
 
-		String disciplina1 = JOptionPane.showInputDialog("Disciplina 1: ");
-		String nota1 = JOptionPane.showInputDialog("Digite a primeira nota : ");
-
-		String disciplina2 = JOptionPane.showInputDialog("Disciplina 2: ");
-		String nota2 = JOptionPane.showInputDialog("Digite a segunda nota : ");
-
-		String disciplina3 = JOptionPane.showInputDialog("Disciplina 3: ");
-		String nota3 = JOptionPane.showInputDialog("Digite a terceira nota : ");
-
-		String disciplina4 = JOptionPane.showInputDialog("Disciplina 4: ");
-		String nota4 = JOptionPane.showInputDialog("Digite a quarta nota : ");
-		
-
 		Aluno aluno1 = new Aluno(); // Aqui será o João
 
 		aluno1.setNome(nome);
@@ -48,6 +36,29 @@ public class PrimeiraClasseJava {
 		aluno1.setDataMatricula(dataMatricula);
 		aluno1.setSerieMatriculado(serieMatriculado);
 		aluno1.setNomeEscola(nomeEscola);
+
+		// Disciplinas sendo instânciadas
+		Disciplina disciplina1 = new Disciplina();
+		disciplina1.setDisciplina("Banco de dados");
+		disciplina1.setNota(90.5);
+		
+		Disciplina disciplina2 = new Disciplina();
+		disciplina1.setDisciplina("Orientação a objetos");
+		disciplina1.setNota(88.4);
+
+		Disciplina disciplina3 = new Disciplina();
+		disciplina1.setDisciplina("Lógica de programação");
+		disciplina1.setNota(72.7);
+		
+		Disciplina disciplina4 = new Disciplina();
+		disciplina1.setDisciplina("HTML");
+		disciplina1.setNota(69.3);
+		
+		//Adicionado à lista
+		aluno1.getDisciplinas().add(disciplina1);
+		aluno1.getDisciplinas().add(disciplina2);
+		aluno1.getDisciplinas().add(disciplina3);
+		aluno1.getDisciplinas().add(disciplina4);
 
 		System.out.println("Nome: " + aluno1.getNome());
 		System.out.println("Data de Nascimento: " + aluno1.getDataNascimento());
@@ -68,6 +79,7 @@ public class PrimeiraClasseJava {
 		System.out.println("Resultado: " + aluno1.getAlunoAprovado2());
 		
 		/*
+
 		// EQUALS e HASHCODE (Diferenciar e comparar objetos)
 		
 		Aluno aluno1 = new Aluno();
@@ -82,5 +94,8 @@ public class PrimeiraClasseJava {
 			System.out.println("Alunos não são iguais.");
 		}
 		*/
+
+
+
 	}
 }
